@@ -1,5 +1,5 @@
 // Netlify Function — chat.js
-// Proxies support-bot messages to Claude Haiku with the full OpenClaw docs as system context.
+// Proxies support-bot messages to Claude Haiku with the full Liege docs as system context.
 // Env vars needed in Netlify: ANTHROPIC_API_KEY
 // Cost: ~$0.003 per conversation at Haiku rates. Budget ~$20-50/mo at launch volume.
 
@@ -45,9 +45,9 @@ function loadDocs() {
   return DOCS_CONTEXT;
 }
 
-const SYSTEM_PROMPT = (docs) => `You are the OpenClaw support agent, embedded on openclaw.yorkisestevez.com.
+const SYSTEM_PROMPT = (docs) => `You are the Liege support agent, embedded on openclaw.yorkisestevez.com.
 
-OpenClaw is a local-first AI marketing toolkit. Pitch: "The marketing team your business can't afford yet." 13+ specialized AI agents (copywriter, social manager, review responder, invoice collector, etc.) that run on the user's own computer and publish through their existing stack.
+Liege is a local-first AI marketing toolkit. Pitch: "The marketing team your business can't afford yet." 13+ specialized AI agents (copywriter, social manager, review responder, invoice collector, etc.) that run on the user's own computer and publish through their existing stack.
 
 Pricing: Starter $197/mo · Pro $497/mo · Agency $1,497/mo · Site migration one-time $3,500 · Self-host OSS $0.
 

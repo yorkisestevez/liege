@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Connect Google — OpenClaw Docs</title>
+<title>Connect Google — Liege Docs</title>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&family=Unbounded:wght@700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="_shared.css">
 </head><body><div class="docs-wrap">
 <aside class="docs-nav">
-  <a class="docs-brand" href="/"><div class="emblem">O</div><div><div class="name">OPENCLAW</div><div class="sub">DOCS</div></div></a>
+  <a class="docs-brand" href="/"><div class="emblem">L</div><div><div class="name">LIEGE</div><div class="sub">DOCS</div></div></a>
   <h4>Get Started</h4><ul>
     <li><a href="/docs/">Overview</a></li>
     <li><a href="/docs/requirements.html">Requirements</a></li>
@@ -29,12 +29,12 @@
 <main class="docs-main">
   <div class="kicker">· CONNECT · GOOGLE ·</div>
   <h1>Connect Google (Gmail + Calendar)</h1>
-  <p>About 8 minutes. You'll create a Google Cloud OAuth app (one-time) and authorize OpenClaw to access Gmail + Calendar APIs on your account. All tokens stay on your machine.</p>
+  <p>About 8 minutes. You'll create a Google Cloud OAuth app (one-time) and authorize Liege to access Gmail + Calendar APIs on your account. All tokens stay on your machine.</p>
 
   <h2>Step 1 — Create a Google Cloud project</h2>
   <ol>
     <li>Go to <a href="https://console.cloud.google.com/projectcreate">console.cloud.google.com/projectcreate</a></li>
-    <li>Project name: <code>OpenClaw Marketing</code> (or whatever you want)</li>
+    <li>Project name: <code>Liege Marketing</code> (or whatever you want)</li>
     <li>Click <strong>Create</strong>. Wait ~30 seconds.</li>
   </ol>
 
@@ -48,7 +48,7 @@
   <h2>Step 3 — Configure the OAuth consent screen</h2>
   <ol>
     <li>Go to <a href="https://console.cloud.google.com/auth/overview">Google Auth Platform → OAuth overview</a> → <strong>Get started</strong></li>
-    <li>App name: <code>OpenClaw Marketing</code></li>
+    <li>App name: <code>Liege Marketing</code></li>
     <li>User support email: your email</li>
     <li>Audience: <strong>External</strong></li>
     <li>Contact: your email</li>
@@ -63,7 +63,7 @@
   <ol>
     <li>Go to <a href="https://console.cloud.google.com/auth/clients">Clients → Create OAuth client</a></li>
     <li>Application type: <strong>Desktop app</strong></li>
-    <li>Name: <code>OpenClaw Desktop</code></li>
+    <li>Name: <code>Liege Desktop</code></li>
     <li><strong>Create</strong></li>
     <li>On the modal, click <strong>Download JSON</strong> OR copy the Client ID — we'll need both pieces shortly</li>
   </ol>
@@ -75,8 +75,8 @@
     <li>Click the download icon next to the secret OR copy the value — e.g. <code>GOCSPX-...</code></li>
   </ol>
 
-  <h2>Step 6 — Wire it into OpenClaw</h2>
-  <p>In your terminal at the OpenClaw folder:</p>
+  <h2>Step 6 — Wire it into Liege</h2>
+  <p>In your terminal at the Liege folder:</p>
   <pre><code>setx GOOGLE_CLIENT_ID "&lt;your-client-id&gt;.apps.googleusercontent.com"
 setx GOOGLE_CLIENT_SECRET "GOCSPX-&lt;your-secret&gt;"
 
@@ -109,7 +109,7 @@ node gmail.js cal-list</code></pre>
   <h3>Next</h3>
   <p><a href="/docs/oauth-meta.html">Connect Meta (Facebook + Instagram) →</a></p>
 
-  <footer class="docs-foot">OPENCLAW DOCS · © 2026</footer>
+  <footer class="docs-foot">LIEGE DOCS · © 2026</footer>
 </main></div>
 <script src="/chat-widget.js" defer></script>
 </body></html>

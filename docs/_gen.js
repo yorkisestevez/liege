@@ -34,7 +34,7 @@ const NAV_ITEMS = [
 function nav(activeSlug) {
   return [
     '<aside class="docs-nav">',
-    '<a class="docs-brand" href="/"><div class="emblem">O</div><div><div class="name">OPENCLAW</div><div class="sub">DOCS</div></div></a>',
+    '<a class="docs-brand" href="/"><div class="emblem">L</div><div><div class="name">LIEGE</div><div class="sub">DOCS</div></div></a>',
     ...NAV_ITEMS.flatMap(([group, items]) => [
       `<h4>${group}</h4><ul>`,
       ...items.map(([slug, title, href]) =>
@@ -49,7 +49,7 @@ function page({ slug, title, kicker, h1, body }) {
   return `<!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>${title} — OpenClaw Docs</title>
+<title>${title} — Liege Docs</title>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&family=Unbounded:wght@700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="_shared.css">
 </head><body><div class="docs-wrap">
@@ -58,7 +58,7 @@ ${nav(slug)}
 <div class="kicker">${kicker}</div>
 <h1>${h1}</h1>
 ${body}
-<footer class="docs-foot">OPENCLAW DOCS · © 2026</footer>
+<footer class="docs-foot">LIEGE DOCS · © 2026</footer>
 </main></div>
 <script src="/chat-widget.js" defer></script>
 </body></html>`;
@@ -75,7 +75,7 @@ const PAGES = {
 <ol>
   <li>Go to <a href="https://developers.facebook.com/apps/">developers.facebook.com/apps</a> → <strong>Create App</strong></li>
   <li>Use case: <strong>Other</strong> → Type: <strong>Business</strong></li>
-  <li>Name: <code>OpenClaw Marketing</code> → Contact email → pick your Business portfolio (Golden Maple, etc.)</li>
+  <li>Name: <code>Liege Marketing</code> → Contact email → pick your Business portfolio (Golden Maple, etc.)</li>
 </ol>
 <h2>Step 2 — Add Facebook Login product</h2>
 <ol>
@@ -156,7 +156,7 @@ node meta.js verify</code></pre>
   'approvals': {
     title: 'Approval Flow', kicker: '· USE ·', h1: 'Approval flow',
     body: `
-<p>OpenClaw's approval flow is the difference between "AI that helps" and "AI that acts on your behalf." Every action type falls into one of two buckets.</p>
+<p>Liege's approval flow is the difference between "AI that helps" and "AI that acts on your behalf." Every action type falls into one of two buckets.</p>
 <h2>Auto-approved (read-only or safe)</h2>
 <ul>
   <li>INBOX-MANAGER — triages mail, doesn't reply</li>
@@ -267,7 +267,7 @@ node fire.js &lt;client&gt; approve &lt;task_id&gt;</code></pre>
     title: 'FAQ', kicker: '· HELP ·', h1: 'Frequently asked questions',
     body: `
 <h2>How is this different from Lindy / Relevance AI / Gumloop?</h2>
-<p>Those are cloud-first horizontal tools priced per token. Great for tech startups, painful for contractors. OpenClaw runs locally on your hardware, caps cloud spend, and is pre-wired for small-business marketing — not a "build-your-own-agent" framework.</p>
+<p>Those are cloud-first horizontal tools priced per token. Great for tech startups, painful for contractors. Liege runs locally on your hardware, caps cloud spend, and is pre-wired for small-business marketing — not a "build-your-own-agent" framework.</p>
 
 <h2>Does my data really stay on my computer?</h2>
 <p>Yes. Local LLMs read and process everything on your machine. Your emails, client lists, voice samples — never leave. The only data that touches a cloud API is the specific prompt you choose to escalate to Claude, and the dashboard shows exactly what's sent.</p>
@@ -278,7 +278,7 @@ node fire.js &lt;client&gt; approve &lt;task_id&gt;</code></pre>
 <h2>Do I need to code to use this?</h2>
 <p>Starter tier: enough to follow a 20-min terminal walkthrough. Pro: we install it for you on a Zoom call. If you can use Gmail and read a recipe, Pro works.</p>
 
-<h2>What happens if OpenClaw goes out of business?</h2>
+<h2>What happens if Liege goes out of business?</h2>
 <p>The core is MIT-licensed and on GitHub. Your install keeps working forever. Your tokens, your data, your voice samples — all on your machine. Vendor lock-in is structurally impossible.</p>
 
 <h2>Can I cancel anytime?</h2>

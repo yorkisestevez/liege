@@ -1,11 +1,11 @@
-// chat-widget.js — OpenClaw support bot
+// chat-widget.js — Liege support bot
 // Embeds a bottom-right chat bubble. Click to open. Messages POST to /.netlify/functions/chat.
 // Falls back gracefully if the function isn't reachable (local dev) by offering mailto.
 
 (function () {
   const STATE = { open: false, history: [], loading: false };
   const ENDPOINT = '/.netlify/functions/chat';
-  const CAL = 'mailto:openclaw@yorkisestevez.com?subject=OpenClaw%20install%20help&body=Tell%20us%20about%20your%20setup%20and%20where%20you%27re%20stuck.';
+  const CAL = 'mailto:openclaw@yorkisestevez.com?subject=Liege%20install%20help&body=Tell%20us%20about%20your%20setup%20and%20where%20you%27re%20stuck.';
 
   // Inject styles (scoped with .oc-* to avoid clashing with docs/_shared.css)
   const style = document.createElement('style');
@@ -59,7 +59,7 @@
   const bubble = document.createElement('div');
   bubble.className = 'oc-bubble';
   bubble.id = 'openclaw-chat-bubble';
-  bubble.title = 'Ask OpenClaw';
+  bubble.title = 'Ask Liege';
   bubble.innerHTML = '💬';
   document.body.appendChild(bubble);
 
@@ -68,7 +68,7 @@
   panel.innerHTML = `
     <div class="oc-hdr">
       <div>
-        <div class="title">OPENCLAW SUPPORT</div>
+        <div class="title">LIEGE SUPPORT</div>
         <div class="sub">AI · INSTANT</div>
       </div>
       <button class="oc-close" aria-label="close">×</button>
@@ -76,7 +76,7 @@
     <div class="oc-body" id="oc-body">
       <div class="oc-msg bot">
         <strong>Hey 👋</strong><br/>
-        I'm the OpenClaw support agent. I've read every page of the docs.
+        I'm the Liege support agent. I've read every page of the docs.
         Ask me anything about install, OAuth, pricing, or troubleshooting — or pick a starter below.
       </div>
       <div class="oc-quick">
@@ -88,7 +88,7 @@
       </div>
     </div>
     <form class="oc-form" id="oc-form">
-      <input class="oc-input" id="oc-input" placeholder="Ask anything about OpenClaw…" autocomplete="off" />
+      <input class="oc-input" id="oc-input" placeholder="Ask anything about Liege…" autocomplete="off" />
       <button class="oc-send" id="oc-send" type="submit">SEND</button>
     </form>
     <div class="oc-escalate">

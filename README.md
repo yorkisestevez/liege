@@ -1,8 +1,8 @@
-# OpenClaw
+# Liege
 
 **The marketing team your business can't afford yet.**
 
-OpenClaw is a local-first AI marketing operations toolkit — 13+ specialized agents (copywriter, social manager, review responder, invoice collector, ads manager, and more) that run on your own computer and publish through your existing stack (WordPress, Webflow, Meta, Mailchimp, Google Business Profile).
+Liege is a local-first AI marketing operations toolkit — 13+ specialized agents (copywriter, social manager, review responder, invoice collector, ads manager, and more) that run on your own computer and publish through your existing stack (WordPress, Webflow, Meta, Mailchimp, Google Business Profile).
 
 Built for contractors, clinics, and solo operators who know they need consistent marketing but don't have time to post, respond, and follow up.
 
@@ -23,7 +23,7 @@ Built for contractors, clinics, and solo operators who know they need consistent
 
 ## What's in this repo
 
-This repo is the **landing page + marketing site** for OpenClaw. The core product (80+ agent skills, Command Deck UI, orchestration layer) lives separately and is published to GitHub closer to public beta.
+This repo is the **landing page + marketing site** for Liege. The core product (80+ agent skills, Command Deck UI, orchestration layer) lives separately and is published to GitHub closer to public beta.
 
 ```
 landing/
