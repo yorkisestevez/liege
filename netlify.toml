@@ -1,0 +1,35 @@
+# Netlify build + forms config for openclaw.yorkisestevez.com
+# Deploy: push to GitHub, connect repo in Netlify, or drag-drop this folder in app.netlify.com/drop
+
+[build]
+  publish = "."
+  # No build step — static HTML. Tailwind is CDN at runtime.
+
+[build.processing]
+  skip_processing = false
+
+[build.processing.html]
+  pretty_urls = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    # Relaxed CSP for Tailwind CDN + Google Fonts. Tighten post-launch.
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self';"
+
+[[redirects]]
+  from = "/docs"
+  to = "/docs/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/docs/*"
+  to = "/docs/:splat"
+  status = 200
+
+# Netlify Forms auto-detection works via data-netlify="true" on the form element.
+# No extra config needed — but we declare expected submissions here for noise-free dashboard.
+# [forms] is optional; Netlify infers from HTML at deploy time.

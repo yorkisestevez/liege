@@ -1,0 +1,27 @@
+# Never commit credentials
+*.env
+*.env.*
+*.key
+credentials/
+.env
+.env.local
+.env.production
+
+# Dependencies (if docs site gets added later)
+node_modules/
+dist/
+.cache/
+.netlify/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Runtime state
+openclaw_waitlist.json
